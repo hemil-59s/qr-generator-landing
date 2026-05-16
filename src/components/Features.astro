@@ -1,0 +1,119 @@
+---
+// Features Section: 3 key features with icons and descriptions
+---
+
+<section id="features" class="features py-20 sm:py-32 relative overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-1/2 left-1/4 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        Why Developers <span class="neon-text">Love</span> QR Generator
+      </h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+        Built with Rust for maximum performance. Simple API, powerful output.
+      </p>
+    </div>
+
+    <!-- Feature Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Feature 1: Blazing Fast -->
+      <div class="feature-card group">
+        <div class="feature-icon">
+          <span class="text-4xl">⚡</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Blazing Fast</h3>
+        <p class="text-gray-400">
+          Built in Rust, generates QR codes in milliseconds. No overhead, no bloat. Pure performance.
+        </p>
+      </div>
+
+      <!-- Feature 2: Multiple Formats -->
+      <div class="feature-card group">
+        <div class="feature-icon">
+          <span class="text-4xl">🎨</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3">PNG & SVG</h3>
+        <p class="text-gray-400">
+          Generate in PNG for raster graphics or SVG for scalable vector. Choose what works for you.
+        </p>
+      </div>
+
+      <!-- Feature 3: CLI First -->
+      <div class="feature-card group">
+        <div class="feature-icon">
+          <span class="text-4xl">🖥️</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3">CLI First</h3>
+        <p class="text-gray-400">
+          Simple, intuitive commands. Pipe-friendly. Integrates seamlessly into your workflow.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .feature-card {
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.8), rgba(26, 26, 26, 0.5));
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.1), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .feature-card:hover {
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2), inset 0 0 20px rgba(34, 197, 94, 0.05);
+    transform: translateY(-4px);
+  }
+
+  .feature-card:hover::before {
+    left: 100%;
+  }
+
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 2px solid rgba(34, 197, 94, 0.3);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover .feature-icon {
+    background: rgba(34, 197, 94, 0.2);
+    border-color: rgba(34, 197, 94, 0.6);
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+    transform: scale(1.1);
+  }
+
+  .feature-card h3 {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .feature-card:hover h3 {
+    color: #22C55E;
+  }
+</style>
